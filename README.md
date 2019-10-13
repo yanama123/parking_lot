@@ -1,5 +1,15 @@
 #Parking Lot
 
+Feature 1 :
+
+Park : Allocate a slot, record the registration number, slot and color of the car
+
+ 
+
+Feature 2 :
+
+Seek : Given a slot number, I should be able to get the details of the car
+
 ### Prerequisites:
 
     - Python 3.5 or above need to be installed
