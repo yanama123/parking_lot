@@ -4,7 +4,7 @@ from .constants import PARKING_LOT, DATA
 def create_parking_lot(n):
     """
 
-    :param n:
+    :param n: number of slots
     :return:
     """
     for i in range(n):
@@ -15,7 +15,7 @@ def create_parking_lot(n):
 def park_vehicle(arguments):
     """
 
-    :param arguments:
+    :param arguments: arguments contains reg no and color of a vehicle
     :return:
     """
     registration_number = arguments[0]
@@ -38,7 +38,7 @@ def park_vehicle(arguments):
 def exit_vehicle(slot):
     """
 
-    :param slot:
+    :param slot: slot number to be exited
     :return:
     """
     if slot in PARKING_LOT:
@@ -50,7 +50,7 @@ def exit_vehicle(slot):
 def seek_vehicle(number):
     """
 
-    :param number:
+    :param number: slot number to be check the status
     :return:
     """
     print("Slot No.\tRegistration No.\tColor")
