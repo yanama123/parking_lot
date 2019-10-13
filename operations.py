@@ -9,7 +9,7 @@ def create_parking_lot(n):
     """
     for i in range(n):
         PARKING_LOT[i + 1] = False
-    print(f"Created a parking lot with {n} slots")
+    print("Created a parking lot with {} slots".format(n))
 
 
 def park_vehicle(arguments):
@@ -32,19 +32,7 @@ def park_vehicle(arguments):
         return
 
     DATA[slot] = dict(registration_number=registration_number, color=color)
-    print(f"Allocated slot number: {slot}")
-
-
-def exit_vehicle(slot):
-    """
-
-    :param slot: slot number to be exited
-    :return:
-    """
-    if slot in PARKING_LOT:
-        if PARKING_LOT[slot] is True:
-            PARKING_LOT[slot] = False
-        print(f"Slot number {slot} is free")
+    print("Allocated slot number: {}".format(slot))
 
 
 def seek_vehicle(number):
@@ -56,6 +44,17 @@ def seek_vehicle(number):
     print("Slot No.\tRegistration No.\tColor")
     for slot in PARKING_LOT:
         if slot == number:
-            print(f"{slot}\t\t{DATA[slot]['registration_number']}\t\t{DATA[slot]['color']}")
+            print("{}\t\t{}\t\t{}".format(slot, DATA[slot]['registration_number'], DATA[slot]['color']))
             break
 
+
+def exit_vehicle(slot):
+    """
+
+    :param slot: slot number to be exited
+    :return:
+    """
+    if slot in PARKING_LOT:
+        if PARKING_LOT[slot] is True:
+            PARKING_LOT[slot] = False
+        print("Slot number {} is free".format(slot))

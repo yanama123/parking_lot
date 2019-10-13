@@ -9,7 +9,10 @@ Parking Lot
     Example: C:\python3.6\python sample.py
 
 # Steps for performing Parking Lot Process
-    Step 1:
+    Step 1: Untar .tar file using following command and run cd parking_lot1.0
+    
+        tar -xzvf parking_lot-1.0.tar.gz
+       
     Step 2: Execute the python file main_work_flow.py which is the Entry for Parking Lot workflow
             -python main_work_flow.py
     Step 3: The workflow will list 5 Options as shown below :

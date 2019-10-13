@@ -6,7 +6,6 @@ from os.path import dirname, abspath
 from .operations import park_vehicle, create_parking_lot, seek_vehicle, exit_vehicle
 
 current_dir = dirname(dirname(abspath(__file__)))
-
 sys.path.append(current_dir)
 
 
