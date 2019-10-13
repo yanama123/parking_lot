@@ -1,6 +1,4 @@
 import setuptools
-import re
-import os
 
 
 # Fields marked as "Optional" may be commented out.

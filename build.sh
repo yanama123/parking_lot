@@ -7,6 +7,5 @@ if [ -d "$DIRECTORY" ]; then
 
 fi
 
-
 echo "Generating distribution archives"
 python setup.py sdist

@@ -38,7 +38,7 @@ def park_vehicle(arguments):
 def seek_vehicle(number):
     """
 
-    :param number: slot number to be check the status
+    :param number: slot number to be check the status of a vehicle
     :return:
     """
     print("Slot No.\tRegistration No.\tColor")
