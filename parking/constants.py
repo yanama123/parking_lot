@@ -1,0 +1,2 @@
+PARKING_LOT = {}
+DATA = {}
